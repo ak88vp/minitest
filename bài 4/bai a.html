@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhapa">
+<button type="button" onclick="result()">kiểm tra</button>
+<p id="result1" property=""></p>
+<script>
+    function result() {
+        let a = +document.getElementById('nhapa').value;
+        let area = a * a
+        let perimeter = a * 4
+        document.getElementById('result1').innerHTML = "ta có độ dài cạnh là " + a + "diện tích là" + area + "chu vi là" + perimeter
+    }
+</script>
+</body>
+</html>
